@@ -33,9 +33,7 @@ class AnatoliaController{
   */
   public function themeConfigureAction(){
 
-    $module = App::module(OtherExtends::getTheme())->config;
-
-    print_r($module);
+    $module = App::module(OtherExtends::getTheme());
 
     return [
       '$view' => [
@@ -43,7 +41,7 @@ class AnatoliaController{
         'name'  => 'theme:views/admin/theme-configure.php'
       ],
       '$data' => [
-        'config'  => $module
+        'config'  => $module->config
       ]
 
     ];

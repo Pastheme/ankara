@@ -74,7 +74,8 @@ return [
     'footer'  => [
       'active'  => false,
       'content' => 'Develop'
-    ]
+    ],
+    'others' => []
   ],
 
   'events'  => [

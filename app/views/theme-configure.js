@@ -38,7 +38,7 @@ window.ThemeConfigure = {
 
     save: function(){
 
-      this.$http.post('apianatolia/savethemeconfig', {data:this.data}).then(response => {
+      this.$http.post('apianatolia/savethemeconfig', {data:this.config}).then(response => {
         UIkit.notify(this.$trans('Saved.'), '');
       }, response => {
 

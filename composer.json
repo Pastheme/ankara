@@ -7,13 +7,14 @@
     "license": "MIT",
     "authors": [
       {
-        "name": "Pasthem",
+        "name": "Pastheme",
         "email": "me@pastheme.com",
         "homepage": "http://pastheme.com"
       }
     ],
     "extra": {
       "icon" : "logo.svg",
-      "image": "image.jpg"
+      "image": "image.jpg",
+      "scripts":"scripts.php"
     }
 }
