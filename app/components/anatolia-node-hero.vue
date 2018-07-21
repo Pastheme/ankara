@@ -69,10 +69,13 @@
           <span class="uk-form-label">{{ 'Other Configurations' | trans }}</span>
 
           <div class="uk-form-controls uk-form-controls-text">
+              <label><input type="checkbox" value="center-content" v-model="node.theme.hero.contrast_logo"> {{ 'Contrast Logo' | trans }}</label>
+          </div>
+          <div class="uk-form-controls uk-form-controls-text">
               <label><input type="checkbox" value="center-content" v-model="node.theme.title_hide"> {{ 'Title Hide' | trans }}</label>
           </div>
           <div class="uk-form-controls uk-form-controls-text">
-            <label><input type="checkbox" value="center-content" v-model="node.theme.content_hide"> {{ 'Content Hide' | trans }}</label>
+              <label><input type="checkbox" value="center-content" v-model="node.theme.content_hide"> {{ 'Content Hide' | trans }}</label>
           </div>
 
       </div>

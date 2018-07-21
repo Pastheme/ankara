@@ -5,7 +5,7 @@ return [
     'uninstall' => function ($app) {},
     'enable' => function ($app) {},
     'disable' => function ($app) {
-      $app['config']->remove('spqr/redirect');
+      $app['config']->remove('pastheme/anatolia');
     },
     'updates' => [
 

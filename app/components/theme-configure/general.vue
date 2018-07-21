@@ -53,7 +53,7 @@
     <div class="uk-form-row uk-form-horizontal">
       <label class="uk-form-label"> {{'Logo Contrast' | trans}} </label>
       <div class="uk-form-controls">
-        <input-image :image.sync="data.config.others.logo.contrast"></input-image>
+        <input-image :source.sync="data.config.others.logo_contrast"></input-image>
       </div>
     </div>
 

@@ -136,7 +136,7 @@
 	        this.$set('image', this.image || { src: '', blend: '', size: '', fixed: '' });
 	        this.$set('img', _.extend({}, this.image));
 
-	        this.$http.get('apiframework/getblend').then(function (response) {
+	        this.$http.get('apianatolia/getblend').then(function (response) {
 	            _this.$set('blends', response.data.blendList);
 	        });
 	    },

@@ -52,6 +52,7 @@ return [
       'section_color' => 'uk-section-default',
       'height'  => 'uk-height-viewport',
       'text_color'  => '',
+      'contrast_logo' => false
     ],
     'title_hide' => false,
     'content_hide'  => false
@@ -75,16 +76,23 @@ return [
       'active'  => false,
       'content' => 'Develop'
     ],
-    'others' => []
+    'others' => [
+      'logo_contrast' => ''
+    ]
   ],
 
   'events'  => [
     'view.system/site/admin/edit' => function($event , $view){
       $view->script('anatolia-node-hero' , 'theme:app/bundle/anatolia-node-hero.js' , 'site-edit');
     },
+
     'view.system/widget/edit' => function ($event, $view) {
       $view->script('widget-theme', 'theme:app/bundle/widget-theme.js', 'widget-edit');
      },
+
+     'view.layout' => function($event) use ($app){
+
+     }
   ]
 
 

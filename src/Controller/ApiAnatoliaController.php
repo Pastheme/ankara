@@ -40,7 +40,7 @@ class ApiAnatoliaController{
   * @Request({"data":"array"} , csrf=true)
   */
   public function saveThemeConfigAction($data){
-
+    print_r($data['others']);
     App::config(OtherExtends::getTheme())->set('navbar' , $data['navbar']);
     App::config(OtherExtends::getTheme())->set('footer' , $data['footer']);
     App::config(OtherExtends::getTheme())->set('content' , $data['content']);
