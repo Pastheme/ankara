@@ -12,7 +12,10 @@
   </head>
   <body>
     <?= $view->render('theme:views/theme/navbar/navbar.php') ?>
+
     <?= $view->render('content') ?>
+    
     <?= $view->render('footer') ?>
+
   </body>
 </html>

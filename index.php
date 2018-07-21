@@ -29,6 +29,19 @@ return [
     ],
   ],
 
+  'positions' => [
+    'navbar' => 'Navbar',
+    'offcanvast-top' => 'Offcanvas Top',
+    'offcanvast-bottom' => 'Offcanvas Bottom',
+    'top-a' => 'Top A',
+    'top-b' => 'Top B',
+    'main-top'  => 'Main Top',
+    'main-bottom'  => 'Main Bottom',
+    'bottom-a' => 'Bottom A',
+    'bottom-b' => 'Bottom B',
+    'footer'   => 'Footer'
+  ],
+
   'routes' => [
     '/apianatolia' => [
       'name' => '@apianatolia',
