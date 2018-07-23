@@ -2,8 +2,12 @@
   <?= $view->position('navbar' , 'theme:views/theme/positions/position_blank.php') ?>
 <?php endif; ?>
 
+<a class="uk-navbar-toggle uk-hidden@m" href="#off-canvas" uk-toggle>
+    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+</a>
+
 <?php if ($view->menu()->exists('second')): ?>
-  <div class="uk-navbar-item">
+  <div class="uk-navbar-item uk-visible@m">
     <a href="#second-menu" uk-toggle><i uk-icon="more-vertical"></i></a>
   </div>
 

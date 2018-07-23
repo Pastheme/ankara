@@ -78,3 +78,5 @@
   </nav>
 
 <?php endif; ?>
+
+<?= $view->render('theme:views/theme/navbar/navbar-others/off-canvas.php') ?>
