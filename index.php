@@ -90,7 +90,7 @@ return [
     'content' => 'uk-container',
     'footer'  => [
       'active'  => false,
-      'content' => 'Develop'
+      'content' => 'Theme Created by <a href="https://www.pasheme.com" target="_blank">Pastheme</a> for <a href="https://www.pagekit.com" target="_blank">Pagekit</a>'
     ],
     'others' => [
       'logo_contrast' => ''
