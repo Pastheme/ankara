@@ -43,10 +43,13 @@
 
           <div class="uk-form-controls">
               <select id="form-status" class="uk-form-width-large" v-model="widget.theme.height">
-                  <option value="uk-height-viewport" :selected="!widget.theme.height">Viewport</option>
-                  <option value="uk-height-small">Small</option>
-                  <option value="uk-height-medium">Medium</option>
-                  <option value="uk-height-large">Large</option>
+                  <option value="" :selected="!widget.theme.height">Default</option>
+                  <option value="uk-section-xsmall">XSmall</option>
+                  <option value="uk-section-small">Small</option>
+                  <option value="uk-section-large">Large</option>
+                  <option value="uk-section-xlarge">XLarge</option>
+                  <option value="uk-height-viewport">Viewport</option>
+                  <option value="uk-padding-remove-vertical">Remove Padding</option>
               </select>
           </div>
       </div>
@@ -67,7 +70,7 @@
           <span class="uk-form-label">{{ 'Other Configurations' | trans }}</span>
 
           <div class="uk-form-controls uk-form-controls-text">
-              <label><input type="checkbox" value="center-content" v-model="widget.theme.title_hile"> {{ 'Title Hide' | trans }}</label>
+              <label><input type="checkbox" value="center-content" v-model="widget.theme.title_hide"> {{ 'Title Hide' | trans }}</label>
           </div>
 
       </div>
