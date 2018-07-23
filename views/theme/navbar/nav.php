@@ -1,6 +1,10 @@
 <?php if ($root->getDepth() === 0) : ?>
-  <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" uk-nav>
+  <ul class="uk-nav <?= $primary ?> uk-nav-parent-icon" uk-nav>
 <?php endif; ?>
+
+  <?php if (isset($text)): ?>
+    <li class="uk-nav-header"><?= $text ?></li>
+  <?php endif; ?>
 
   <?php foreach ($root->getChildren() as $node) : ?>
     <li class="<?= $node->hasChildren() ? 'uk-parent' : '' ?><?= $node->get('active') ? ' uk-active' : '' ?>" >

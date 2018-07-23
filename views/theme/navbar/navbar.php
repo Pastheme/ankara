@@ -55,7 +55,7 @@
 
   ?>
 
-  <header class="<?= implode(' ' , $headerStyle[0]) ?> <?= implode(' ' , $headerStyle[1]) ?>" <?= implode(' ' , $headerOther) ?>>
+  <header class="<?= implode(' ' , $headerStyle[0]) ?> <?= isset($headerStyle[1]) ? implode(' ' , $headerStyle[1]):'' ?>" <?= implode(' ' , $headerOther) ?>>
 
     <nav class="<?= implode(' ' , $navbarStyle) ?>">
       <div class="<?= $params['navbar']['container'] ?>" uk-navbar>

@@ -8,4 +8,7 @@
 
 <div class="uk-navbar-right">
   <?= $view->render('theme:views/theme/navbar/default/navbar-right.php') ?>
+  <div class="uk-navbar-item">
+
+  </div>
 </div>
