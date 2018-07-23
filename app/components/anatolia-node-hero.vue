@@ -77,6 +77,9 @@
           <div class="uk-form-controls uk-form-controls-text">
               <label><input type="checkbox" value="center-content" v-model="node.theme.content_hide"> {{ 'Content Hide' | trans }}</label>
           </div>
+          <div class="uk-form-controls uk-form-controls-text">
+              <label><input type="checkbox" value="center-content" v-model="node.theme.hero.expand"> {{ 'Expand Height' | trans }}</label>
+          </div>
 
       </div>
 

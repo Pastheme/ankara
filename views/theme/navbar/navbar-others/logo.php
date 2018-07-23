@@ -1,4 +1,4 @@
-<a class="uk-navbar-brand" href="<?= $view->url()->get() ?>">
+<a class="<?= $item ?>" href="<?= $view->url()->get() ?>">
     <?php if ($params['hero']['contrast_logo'] === true): ?>
 
       <?php if (!empty($params['others']['logo_contrast'])): ?>

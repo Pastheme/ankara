@@ -48,7 +48,6 @@
                   <option value="uk-section-small">Small</option>
                   <option value="uk-section-large">Large</option>
                   <option value="uk-section-xlarge">XLarge</option>
-                  <option value="uk-height-viewport">Viewport</option>
                   <option value="uk-padding-remove-vertical">Remove Padding</option>
               </select>
           </div>

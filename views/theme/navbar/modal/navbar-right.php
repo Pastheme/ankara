@@ -11,7 +11,16 @@
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center">
-          <?= $view->menu('second' , 'theme:views/theme/navbar/nav.php') ?>
+            <div>
+
+              <?= $view->menu('main' , 'theme:views/theme/navbar/nav.php') ?>
+
+              <?php if ($view->menu()->exists('second')): ?>
+                <hr />
+                <?= $view->menu('second' , 'theme:views/theme/navbar/nav.php') ?>
+              <?php endif; ?>
+
+            </div>
         </div>
     </div>
   </div>

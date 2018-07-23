@@ -29,6 +29,11 @@ return [
     ],
   ],
 
+  'menus' => [
+    'main' => 'Main',
+    'second' => 'Second'
+  ],
+
   'positions' => [
     'navbar' => 'Navbar',
     'offcanvast-top' => 'Offcanvas Top',
@@ -62,7 +67,8 @@ return [
       'section_color' => 'uk-section-default',
       'height'  => 'uk-height-viewport',
       'text_color'  => '',
-      'contrast_logo' => false
+      'contrast_logo' => false,
+      'expand'  => false,
     ],
     'title_hide' => false,
     'content_hide'  => false
