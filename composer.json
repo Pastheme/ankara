@@ -1,7 +1,7 @@
 {
     "name": "pastheme/anatolia",
     "type": "pagekit-theme",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "title": "ThemeName Anatolia",
     "description": "A blueprint to develop your own themes.",
     "license": "MIT",
@@ -14,7 +14,7 @@
     ],
     "extra": {
       "icon" : "logo.svg",
-      "image": "image.jpg",
+      "image": "image.svg",
       "scripts":"scripts.php"
     }
 }
