@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= $view->render('head') ?>
 
-    <?= $view->style('theme' , 'theme:assets/css/uikit.min.css') ?>
+    <?= $view->style('theme' , 'theme:assets/css/uikit.ankara.min.css') ?>
     <?= $view->script('theme-js' , 'theme:assets/js/uikit.min.js' , ['jquery']) ?>
     <?= $view->script('theme-icons' , 'theme:assets/js/uikit-icons.min.js' , ['jquery' , 'theme-js']) ?>
   </head>
