@@ -1,8 +1,8 @@
-<?php $view->script('comments', 'blog:app/bundle/comments.js', 'vue') ?>
+<?php $view->script('comments', 'dpnblog:app/bundle/comments.js', 'vue') ?>
 
 <div id="comments" v-cloak>
 
-    <div class="uk-margin-large-top" v-show="config.enabled || comments.length">
+    <div class="uk-container uk-container-small" v-show="config.enabled || comments.length">
 
         <template v-if="comments.length">
 
@@ -26,14 +26,14 @@
 
 <script id="comments-item" type="text/template">
 
-    <li :id="'comment-'+comment.id">
+    <li class="uk-container uk-container-small" :id="'comment-'+comment.id">
 
         <article class="uk-comment" :class="{'uk-comment-primary': comment.special}">
 
             <header class="uk-comment-header uk-position-relative uk-grid-medium uk-flex-middle" uk-grid>
 
                 <div class="uk-width-auto">
-                  <img class="uk-comment-avatar" width="80" height="80" :alt="comment.author" v-gravatar="comment.email">
+                  <img class="uk-comment-avatar uk-border-circle" width="50" height="50" :alt="comment.author" v-gravatar="comment.email">
                 </div>
 
                 <div class="uk-width-expand">
@@ -73,13 +73,13 @@
 
 <script id="comments-reply" type="text/template">
 
-    <div class="uk-margin-large-top js-comment-reply">
+    <div class="uk-container uk-container-small uk-margin-large js-comment-reply">
 
         <h2 class="uk-h4">{{ 'Leave a comment' | trans }}</h2>
 
         <div class="uk-alert uk-alert-danger" v-show="error">{{ error }}</div>
 
-        <form class="uk-form uk-form-stacked" v-if="user.canComment" v-validator="form" @submit.prevent="save | valid">
+        <form  class="uk-form uk-form-stacked" v-if="user.canComment" v-validator="form" @submit.prevent="save | valid">
 
             <p v-if="user.isAuthenticated">{{ 'Logged in as %name%' | trans {name:user.name} }}</p>
 
@@ -108,7 +108,7 @@
             <div class="uk-form-row">
                 <label for="form-comment" class="uk-form-label">{{ 'Comment' | trans }}</label>
                 <div class="uk-form-controls">
-                    <textarea id="form-comment" class="uk-form-width-large" name="content" rows="10" v-model="content" v-validate:required></textarea>
+                    <textarea id="form-comment" class="uk-width-1-1" name="content" rows="10" v-model="content" v-validate:required></textarea>
 
                     <p class="uk-form-help-block uk-text-danger" v-show="form.content.invalid">{{ 'Comment cannot be blank.' | trans }}</p>
                 </div>
