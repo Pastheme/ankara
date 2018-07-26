@@ -2,7 +2,7 @@
 use Pagekit\Application;
 return [
 
-  'name'  => 'anatolia',
+  'name'  => 'ankara',
   'main'  => function(Application $app){},
   'resources' => ['theme:'=>'theme'],
   'autoload'  => ['Pastheme\\Anatolia\\' => 'src'],

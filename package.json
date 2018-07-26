@@ -1,5 +1,5 @@
 {
-  "name": "anatolia",
+  "name": "ankara",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pastheme/anatolia.git"
+    "url": "git+https://github.com/pastheme/ankara.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pastheme/anatolia/issues"
+    "url": "https://github.com/pastheme/ankara/issues"
   },
-  "homepage": "https://github.com/pastheme/anatolia#readme",
+  "homepage": "https://github.com/pastheme/ankara#readme",
   "devDependencies": {
     "babel-core": "^6.1.2",
     "babel-loader": "^6.1.0",
