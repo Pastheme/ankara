@@ -33,7 +33,13 @@ class AnatoliaController{
   */
   public function themeConfigureAction(){
 
-    $module = App::module(OtherExtends::getTheme());
+    $module = App::module('ankara');
+
+    $imgSelect = [
+      'centermenu' => App::view()->url()->getStatic('theme:assets/img/admin/center-menu.svg'),
+      'logocenter' => App::view()->url()->getStatic('theme:assets/img/admin/logo-center.svg'),
+      'modalmenu' => App::view()->url()->getStatic('theme:assets/img/admin/modal-menu.svg'),
+    ];
 
     return [
       '$view' => [
@@ -41,7 +47,8 @@ class AnatoliaController{
         'name'  => 'theme:views/admin/theme-configure.php'
       ],
       '$data' => [
-        'config'  => $module->config
+        'config'  => $module->config,
+        'img'     => $imgSelect
       ]
 
     ];

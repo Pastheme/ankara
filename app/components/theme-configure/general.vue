@@ -26,7 +26,7 @@
     <div class="uk-margin uk-grid uk-grid-small uk-grid-width-medium-1-3">
       <div>
         <div class="uk-cover-background uk-position-relative">
-          <img src="/packages/pastheme/anatolia/assets/img/admin/center-menu.svg">
+          <img v-bind:src="data.img['centermenu']">
           <div v-if="data.config.navbar.mode == 'default'" class="uk-position-cover uk-position-medium uk-flex uk-flex-center uk-flex-bottom">
             <div class="uk-badge uk-badge-success">Selected</div>
           </div>
@@ -34,7 +34,7 @@
       </div>
       <div>
         <div class="uk-cover-background uk-position-relative">
-          <img src="/packages/pastheme/anatolia/assets/img/admin/logo-center.svg" />
+          <img v-bind:src="data.img['logocenter']">
           <div v-if="data.config.navbar.mode == 'logo_center'" class="uk-position-cover uk-position-medium uk-flex uk-flex-center uk-flex-bottom">
             <div class="uk-badge uk-badge-success">Selected</div>
           </div>
@@ -42,7 +42,7 @@
       </div>
       <div>
         <div class="uk-cover-background uk-position-relative">
-          <img src="/packages/pastheme/anatolia/assets/img/admin/modal-menu.svg" />
+          <img v-bind:src="data.img['modalmenu']">
           <div v-if="data.config.navbar.mode == 'modal'" class="uk-position-cover uk-position-medium uk-flex uk-flex-center uk-flex-bottom">
             <div class="uk-badge uk-badge-success">Selected</div>
           </div>
