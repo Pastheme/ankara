@@ -1,3 +1,3 @@
-![anatolia](http://res.cloudinary.com/devpenguen/image/upload/v1532375928/image_c9dyok.png)
+![anatolia](https://pastheme.com/storage/modules/ankara.png)
 
 ### Ankara Anatolia Theme
