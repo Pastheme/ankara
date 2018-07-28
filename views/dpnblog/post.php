@@ -61,7 +61,7 @@
       </div>
 
       <?php if ($share === true): ?>
-        <div class="uk-width-auto uk-flex uk-flex-middle">
+        <div class="uk-width-auto@m uk-flex uk-flex-middle uk-flex-left@m uk-flex-center">
           <a class="uk-button uk-button-gradient" target="_blank" href="https://twitter.com/intent/tweet?text=<?= $desc ?>" data-size="large">
             <i uk-icon="twitter"></i>  Share On Twitter
           </a>
