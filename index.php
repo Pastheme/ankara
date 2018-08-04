@@ -10,22 +10,16 @@ return [
 
   'menu' => [
     'anatolia' => [
-      'label' => 'Anatolia',
+      'label' => 'Pastheme',
       'icon'  => 'theme:logo.svg',
-      'url'   => '@anatolia',
+      'url'   => '@anatolia/themeconfigure',
       'priority'=> 999
     ],
     'anatolia: info' => [
       'parent'=> 'anatolia',
-      'label' => 'Info',
-      'url'   => '@anatolia',
-      'active'=> '@anatolia'
-    ],
-    'anatolia: themes' => [
-      'parent'=> 'anatolia',
       'label' => 'Theme Configure',
       'url'   => '@anatolia/themeconfigure',
-      'active'   => '@anatolia/themeconfigure*',
+      'active'=> '@anatolia/themeconfigure*'
     ],
   ],
 
@@ -90,7 +84,7 @@ return [
     'content' => 'uk-container',
     'footer'  => [
       'active'  => false,
-      'content' => 'Theme Created by <a href="https://www.pasheme.com" target="_blank">Pastheme</a> for <a href="https://www.pagekit.com" target="_blank">Pagekit</a>'
+      'content' => 'Theme Created by <a href="https://www.pastheme.com" target="_blank">Pastheme</a> for <a href="https://www.pagekit.com" target="_blank">Pagekit</a>'
     ],
     'others' => [
       'logo_contrast' => ''
@@ -105,10 +99,6 @@ return [
     'view.system/widget/edit' => function ($event, $view) {
       $view->script('widget-theme', 'theme:app/bundle/widget-theme.js', 'widget-edit');
      },
-
-     'view.layout' => function($event) use ($app){
-
-     }
   ]
 
 

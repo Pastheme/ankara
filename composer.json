@@ -1,7 +1,7 @@
 {
     "name": "pastheme/ankara",
     "type": "pagekit-theme",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "title": "Ankara Anatolia",
     "description": "A blueprint to develop your own themes.",
     "license": "MIT",
@@ -14,7 +14,7 @@
     ],
     "extra": {
       "icon" : "logo.svg",
-      "image": "image.svg",
+      "image": "image.png",
       "scripts":"scripts.php"
     }
 }

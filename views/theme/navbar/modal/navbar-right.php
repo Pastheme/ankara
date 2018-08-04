@@ -2,7 +2,7 @@
   <?= $view->position('navbar' , 'theme:views/theme/positions/position_blank.php') ?>
 <?php endif; ?>
 
-<?php if ($view->menu()->exists('second')): ?>
+<?php if ($view->menu()->exists('main')): ?>
   <div class="uk-navbar-item">
     <a href="#second-menu" class="uk-link-reset" uk-toggle><i uk-icon="more-vertical"></i></a>
   </div>

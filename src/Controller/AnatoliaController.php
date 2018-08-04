@@ -10,25 +10,6 @@ use Pastheme\Anatolia\OtherExtends;
 class AnatoliaController{
 
   /**
-  * @Route("/")
-  */
-  public function indexAction(){
-
-    $banner = [
-      'top' => App::view()->url()->getStatic('theme:assets/img/admin/banner.svg'),
-      'mid' => App::view()->url()->getStatic('theme:assets/img/admin/newdate.svg')
-    ];
-
-    return [
-      '$view' => [
-        'title' => 'Framework Homepage',
-        'name'  => 'theme:views/admin/index.php'
-      ],
-      'banner'  => $banner
-    ];
-  }
-
-  /**
   * @Route("/theme-configure")
   */
   public function themeConfigureAction(){
