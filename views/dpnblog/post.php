@@ -20,7 +20,7 @@
     <h1 class="uk-heading-primary uk-text-center"><?= $post->title ?></h1>
     <?php if ($post->excerpt): ?>
       <div class="uk-text-center uk-text-lead uk-text-muted">
-        <?= substr($post->excerpt , 0 , 100) ?>
+        <?= $post->excerpt ?>
       </div>
     <?php endif; ?>
 
@@ -44,7 +44,6 @@
         <div id="app">
           <div class="uk-flex uk-flex-middle">
             <h4 class="uk-h3 uk-margin-remove"><?= $post->user->name ?></h4>
-
           </div>
           <div id="postData" postid="<?= $post->id ?>" like="post"  class="uk-comment-meta">
             <?= __('Posted in') ?>

@@ -9,14 +9,14 @@
         <?php if ($image = $post->get('image.src')): ?>
           <div class="uk-card-media-top uk-cover-container">
             <a href="<?= $view->url('@dpnblog/id', ['id' => $post->id]) ?>">
-              <img data-src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>" uk-img>
+              <img data-src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>" style="width:100%; height:200px; object-fit:cover;" uk-img>
             </a>
           </div>
         <?php endif; ?>
         <div class="uk-card-body uk-card-small">
           <h5 class="uk-margin-remove"><a class="uk-link-reset" href="<?= $view->url('@dpnblog/id', ['id' => $post->id]) ?>"><?= $post->title ?></a></h5>
           <p class="uk-text-small uk-margin-remove"><a class="" href="<?= $view->url('@blogcategory/id', ['id' => $post->category->id]) ?>"><?= $post->category->title ?></a></p>
-          <span class="uk-text-small"><?= substr($post->excerpt , 0 , 100) ?: substr($post->content , 0 , 20) ?></span>
+          <span class="uk-text-small"><?= $post->excerpt ?: substr($post->content , 0 , 150) ?></span>
           <div class="uk-child-width-1-3" uk-grid>
 
             <div class="uk-flex uk-flex-middle">
